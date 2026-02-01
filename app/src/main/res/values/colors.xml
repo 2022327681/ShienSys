@@ -1,0 +1,19 @@
+<resources>
+    <!-- 🌞 Light theme defaults -->
+    <color name="bg">#F9FAFB</color>
+    <color name="card">#FFFFFF</color>
+    <color name="text">#111827</color>
+    <color name="muted">#6B7280</color>
+    <color name="accent">#4F8CFF</color>
+    <color name="danger">#E74C3C</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 🌙 Dark theme fallbacks (same names as -night to avoid crash) -->
+    <color name="bgdark">#0B1020</color>
+    <color name="carddark">#12182B</color>
+    <color name="textdark">#E7ECF4</color>
+    <color name="muteddark">#6C7A93</color>
+    <color name="accentdark">#3A6EE8</color>
+    <color name="dangerdark">#E74C3C</color>
+    <color name="whitedark">#FFFFFF</color>
+</resources>

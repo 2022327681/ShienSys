@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 🌙 Base Dark Theme -->
+    <style name="Base.Theme.ShienSys" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Backgrounds -->
+        <item name="android:windowBackground">@color/bgdark</item>
+        <item name="colorSurface">@color/carddark</item>
+
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/accentdark</item>
+        <item name="colorPrimaryContainer">@color/carddark</item>
+        <item name="colorOnPrimary">@color/whitedark</item>
+
+        <!-- Text Colors -->
+        <item name="android:textColorPrimary">@color/textdark</item>
+        <item name="android:textColorSecondary">@color/muteddark</item>
+
+        <!-- Accent & Error Colors -->
+        <item name="colorSecondary">@color/accentdark</item>
+        <item name="colorError">@color/dangerdark</item>
+
+        <!-- System Bars -->
+        <item name="android:statusBarColor">@color/bgdark</item>
+        <item name="android:navigationBarColor">@color/bgdark</item>
+
+        <!-- Default Button Tint -->
+        <item name="android:colorButtonNormal">@color/accentdark</item>
+        <item name="android:textColor">@color/textdark</item>
+    </style>
+
+    <style name="Theme.ShienSys" parent="Base.Theme.ShienSys" />
+</resources>

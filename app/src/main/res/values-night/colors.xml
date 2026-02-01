@@ -1,0 +1,10 @@
+<resources>
+    <color name="bgdark">#0B1020</color>
+    <color name="carddark">#12182B</color>
+    <color name="textdark">#E7ECF4</color>
+    <color name="muteddark">#6C7A93</color>
+    <color name="accentdark">#3A6EE8</color>
+    <color name="dangerdark">#E74C3C</color>
+    <color name="whitedark">#FFFFFF</color>
+
+</resources>

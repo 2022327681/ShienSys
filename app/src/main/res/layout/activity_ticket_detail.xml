@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <!-- ========================= -->
+    <!-- Title -->
+    <!-- ========================= -->
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ticket Details"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/text"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- ========================= -->
+    <!-- Scrollable Card -->
+    <!-- ========================= -->
+    <ScrollView
+        android:id="@+id/detailsScroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/pageTitle"
+        app:layout_constraintBottom_toTopOf="@id/backButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_card"
+            android:elevation="6dp">
+
+            <!-- Ticket title -->
+            <TextView
+                android:id="@+id/ticketTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/text"/>
+
+            <!-- Status -->
+            <TextView
+                android:id="@+id/ticketStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/accent"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Assigned engineer -->
+            <TextView
+                android:id="@+id/ticketEngineer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/text"
+                android:layout_marginTop="12dp"/>
+
+            <!-- Created at -->
+            <TextView
+                android:id="@+id/ticketCreatedAt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/muted"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Updated at -->
+            <TextView
+                android:id="@+id/ticketUpdatedAt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/muted"
+                android:layout_marginTop="4dp"/>
+
+            <!-- Closed at -->
+            <TextView
+                android:id="@+id/ticketClosedAt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/muted"
+                android:layout_marginTop="4dp"/>
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/ticketDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/text"
+                android:layout_marginTop="16dp"/>
+
+            <!-- Solution -->
+            <TextView
+                android:id="@+id/ticketSolution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/muted"
+                android:layout_marginTop="16dp"/>
+
+            <!-- ========================= -->
+            <!-- Follow-up Notes -->
+            <!-- ========================= -->
+            <TextView
+                android:id="@+id/ticketFollowUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If you would like to follow up on this ticket, please contact us at 03-1234 1234 or email support@shiensys.com."
+                android:textSize="16sp"
+                android:textColor="@color/muted"
+                android:layout_marginTop="24dp"
+                android:lineSpacingExtra="4dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ========================= -->
+    <!-- Back Button -->
+    <!-- ========================= -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/accent"
+        android:paddingVertical="12dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
