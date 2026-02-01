@@ -31,7 +31,6 @@ public class LoginActivity extends AppCompatActivity {
         session = new SessionManager(this);
         api = RetrofitClient.get(this).create(ApiService.class);
 
-        // UI references
         root = findViewById(R.id.rootLayout);
         card = findViewById(R.id.card);
         appTitle = findViewById(R.id.appTitle);
@@ -43,7 +42,6 @@ public class LoginActivity extends AppCompatActivity {
         progress = findViewById(R.id.loginProgress);
         loginBtn = findViewById(R.id.loginBtn);
 
-        // Already logged in
         if (session.isLoggedIn()) {
             errorText.setText(
                     "You're signed in as " + session.email() +
@@ -64,9 +62,6 @@ public class LoginActivity extends AppCompatActivity {
         loginBtn.setOnClickListener(v -> doLogin());
     }
 
-    // =========================
-    // LOGIN
-    // =========================
     private void doLogin() {
         errorText.setVisibility(View.GONE);
 

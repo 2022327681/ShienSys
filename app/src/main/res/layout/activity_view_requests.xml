@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@color/bg">
 
-    <!-- Title -->
     <TextView
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
@@ -20,7 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Filter -->
     <Spinner
         android:id="@+id/statusFilterSpinner"
         android:layout_width="0dp"
@@ -32,7 +30,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Back Button (BOTTOM) -->
     <Button
         android:id="@+id/backButton"
         android:layout_width="0dp"
@@ -50,7 +47,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Requests List -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/requestsRecyclerView"
         android:layout_width="0dp"

@@ -1,41 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- 🌞 Forced Light Theme (NO Dark Mode) -->
     <style name="Theme.ShienSys.Light"
         parent="Theme.Material3.Light.NoActionBar">
-
-        <!-- App Backgrounds -->
         <item name="android:windowBackground">@color/bg</item>
         <item name="colorSurface">@color/card</item>
-
-        <!-- Primary / Accent -->
         <item name="colorPrimary">@color/accent</item>
         <item name="colorPrimaryContainer">@color/accent</item>
         <item name="colorOnPrimary">@color/white</item>
-
-        <!-- Secondary -->
         <item name="colorSecondary">@color/accent</item>
         <item name="colorSecondaryContainer">@color/accent</item>
         <item name="colorOnSecondary">@color/white</item>
-
-        <!-- Text -->
         <item name="android:textColorPrimary">@color/text</item>
         <item name="android:textColorSecondary">@color/muted</item>
         <item name="android:textColor">@color/text</item>
-
-        <!-- Error -->
         <item name="colorError">@color/danger</item>
         <item name="colorOnError">@color/white</item>
-
-        <!-- System Bars -->
         <item name="android:statusBarColor">@color/accent</item>
         <item name="android:navigationBarColor">@color/bg</item>
-
-        <!-- Buttons -->
         <item name="android:colorButtonNormal">@color/accent</item>
-
-        <!-- Disable night overlays completely -->
         <item name="android:forceDarkAllowed">false</item>
 
     </style>

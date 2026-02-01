@@ -45,7 +45,7 @@ public class RequestsAdapter
         RequestItem item = items.get(position);
 
         holder.issueNo.setText(item.ticket_no);
-        holder.status.setText(formatStatus(item.status)); // ✅ FIXED
+        holder.status.setText(formatStatus(item.status));
 
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(context, TicketDetailActivity.class);

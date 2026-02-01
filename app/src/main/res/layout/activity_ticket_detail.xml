@@ -6,9 +6,6 @@
     android:layout_height="match_parent"
     android:background="@color/bg">
 
-    <!-- ========================= -->
-    <!-- Title -->
-    <!-- ========================= -->
     <TextView
         android:id="@+id/pageTitle"
         android:layout_width="wrap_content"
@@ -22,9 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- ========================= -->
-    <!-- Scrollable Card -->
-    <!-- ========================= -->
     <ScrollView
         android:id="@+id/detailsScroll"
         android:layout_width="0dp"
@@ -44,7 +38,6 @@
             android:background="@drawable/bg_card"
             android:elevation="6dp">
 
-            <!-- Ticket title -->
             <TextView
                 android:id="@+id/ticketTitle"
                 android:layout_width="match_parent"
@@ -53,7 +46,6 @@
                 android:textStyle="bold"
                 android:textColor="@color/text"/>
 
-            <!-- Status -->
             <TextView
                 android:id="@+id/ticketStatus"
                 android:layout_width="match_parent"
@@ -62,7 +54,6 @@
                 android:textColor="@color/accent"
                 android:layout_marginTop="8dp"/>
 
-            <!-- Assigned engineer -->
             <TextView
                 android:id="@+id/ticketEngineer"
                 android:layout_width="match_parent"
@@ -71,7 +62,6 @@
                 android:textColor="@color/text"
                 android:layout_marginTop="12dp"/>
 
-            <!-- Created at -->
             <TextView
                 android:id="@+id/ticketCreatedAt"
                 android:layout_width="match_parent"
@@ -80,7 +70,6 @@
                 android:textColor="@color/muted"
                 android:layout_marginTop="8dp"/>
 
-            <!-- Updated at -->
             <TextView
                 android:id="@+id/ticketUpdatedAt"
                 android:layout_width="match_parent"
@@ -89,7 +78,6 @@
                 android:textColor="@color/muted"
                 android:layout_marginTop="4dp"/>
 
-            <!-- Closed at -->
             <TextView
                 android:id="@+id/ticketClosedAt"
                 android:layout_width="match_parent"
@@ -98,7 +86,6 @@
                 android:textColor="@color/muted"
                 android:layout_marginTop="4dp"/>
 
-            <!-- Description -->
             <TextView
                 android:id="@+id/ticketDescription"
                 android:layout_width="match_parent"
@@ -107,7 +94,6 @@
                 android:textColor="@color/text"
                 android:layout_marginTop="16dp"/>
 
-            <!-- Solution -->
             <TextView
                 android:id="@+id/ticketSolution"
                 android:layout_width="match_parent"
@@ -116,9 +102,6 @@
                 android:textColor="@color/muted"
                 android:layout_marginTop="16dp"/>
 
-            <!-- ========================= -->
-            <!-- Follow-up Notes -->
-            <!-- ========================= -->
             <TextView
                 android:id="@+id/ticketFollowUp"
                 android:layout_width="match_parent"
@@ -132,9 +115,6 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- ========================= -->
-    <!-- Back Button -->
-    <!-- ========================= -->
     <Button
         android:id="@+id/backButton"
         android:layout_width="0dp"
